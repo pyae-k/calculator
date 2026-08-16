@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+  (function() {
+    document.documentElement.setAttribute("data-theme", "light");
+  })();
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#1a1a1a" media="(prefers-color-scheme: dark)" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="CalcKit" />
+
+  <title>CalcKit — Calculator, Converter &amp; Health Tools | Pyae Phyo Kyaw</title>
+  <meta name="title" content="CalcKit — Calculator, Converter &amp; Health Tools | Pyae Phyo Kyaw" />
+  <meta name="description" content="CalcKit is a free, offline-capable calculator PWA with a scientific calculator, unit & currency converter, health calculators (BMI, BMR, TDEE, body fat), and financial tools (compound interest, loan, savings). Every result shows the formula." />
+  <meta name="author" content="Pyae Phyo Kyaw" />
+  <meta name="keywords" content="calculator, scientific calculator, unit converter, currency converter, BMI calculator, BMR calculator, TDEE, body fat, compound interest, loan calculator, PWA, offline calculator, free tools" />
+  <meta name="robots" content="index, follow" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <link rel="canonical" href="https://pyaek.com/apps/calc/" />
+  
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://pyaek.com/apps/calc/" />
+  <meta property="og:title" content="CalcKit — Calculator, Converter &amp; Health Tools" />
+  <meta property="og:description" content="Free, offline-capable calculator PWA with scientific calculator, unit & currency converter, health calculators, and financial tools. Every result shows the formula." />
+  <meta property="og:image" content="https://pyaek.com/assets/images/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="CalcKit calculator app screenshot" />
+  <meta property="og:site_name" content="Pyae Phyo Kyaw" />
+  <meta property="og:locale" content="en_US" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://pyaek.com/apps/calc/" />
+  <meta name="twitter:title" content="CalcKit — Calculator, Converter &amp; Health Tools" />
+  <meta name="twitter:description" content="Free, offline-capable calculator PWA with scientific calculator, unit & currency converter, health calculators, and financial tools. Every result shows the formula." />
+  <meta name="twitter:creator" content="@pyaek" />
+  <meta name="twitter:image" content="https://pyaek.com/assets/images/og-image.png" />
+  <meta name="twitter:image:alt" content="CalcKit calculator app screenshot" />
+
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="./assets/icons/favicon.ico" sizes="any" />
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "CalcKit",
+    "url": "https://pyaek.com/apps/calc/",
+    "description": "All-in-one calculator PWA: scientific calculator, unit & currency converter, health calculators (BMI, BMR, TDEE, body fat), and financial tools (compound interest, loan, savings). Works fully offline.",
+    "applicationCategory": "Multimedia",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Pyae Phyo Kyaw",
+      "url": "https://pyaek.com"
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <main id="main">
+    <h1 class="visually-hidden">CalcKit — Calculator, Converter &amp; Health Tools</h1>
+    <header class="glass-header">
+      <div class="header-inner">
+        <a href="./" class="app-title">CalcKit</a>
+        <div class="doc-btn-group" aria-label="Documentation and contact">
+          <a class="doc-btn" href="./readme/" title="README documentation" aria-label="README documentation">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          </a>
+          <a class="doc-btn" href="./tech-doc/" title="Technical documentation" aria-label="Technical documentation">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </a>
+          <a class="doc-btn" href="mailto:hello@pyaek.com" title="Contact hello@pyaek.com" aria-label="Contact hello@pyaek.com">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
+          </a>
+        </div>
+        <button class="theme-toggle" aria-label="Switch to dark mode" title="Switch to dark mode">
+          <svg class="theme-toggle-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <nav class="calc-tabs" role="tablist" aria-label="Calculator mode">
+      <button class="calc-tab" role="tab" data-tab="calc" aria-selected="true" aria-controls="tab-calc" id="tab-calc-btn">Basic</button>
+      <button class="calc-tab" role="tab" data-tab="convert" aria-selected="false" aria-controls="tab-convert" id="tab-convert-btn">Converter</button>
+      <button class="calc-tab" role="tab" data-tab="health" aria-selected="false" aria-controls="tab-health" id="tab-health-btn">Health</button>
+      <button class="calc-tab" role="tab" data-tab="tools" aria-selected="false" aria-controls="tab-tools" id="tab-tools-btn">Tools</button>
+    </nav>
+
+    <!-- ====== Calculator Panel ====== -->
+    <section id="tab-calc" class="calc-panel" role="tabpanel" aria-labelledby="tab-calc-btn">
+      <div class="calc-display-wrap">
+        <output id="calc-expression" class="calc-expression" aria-live="polite"></output>
+        <output id="calc-display" class="calc-display" aria-live="polite">0</output>
+      </div>
+
+      <div class="calc-mem-row">
+        <button class="calc-btn calc-btn--mem" data-action="mc" aria-label="Memory clear">MC</button>
+        <button class="calc-btn calc-btn--mem" data-action="mr" aria-label="Memory recall">MR</button>
+        <button class="calc-btn calc-btn--mem" data-action="mplus" aria-label="Memory add">M+</button>
+        <button class="calc-btn calc-btn--mem" data-action="mminus" aria-label="Memory subtract">M−</button>
+      </div>
+
+      <div class="calc-sci-row">
+        <button class="calc-btn calc-btn--mem" data-action="sciToggle" aria-expanded="false" aria-controls="calc-sci-grid" aria-label="Toggle scientific functions" title="Scientific functions (keyboard: s c t l n g a x e p ! v)">SCI</button>
+        <button class="calc-btn calc-btn--mem" data-action="angleMode" aria-pressed="false" aria-label="Toggle angle mode between degrees and radians" title="Angle mode: degrees or radians (keyboard: d)">DEG</button>
+      </div>
+
+      <div id="calc-sci-grid" class="calc-sci-grid" hidden>
+        <button class="calc-btn calc-btn--fn" data-action="fn" data-value="sin" aria-label="Sine">sin</button>
+        <button class="calc-btn calc-btn--fn" data-action="fn" data-value="cos" aria-label="Cosine">cos</button>
+        <button class="calc-btn calc-btn--fn" data-action="fn" data-value="tan" aria-label="Tangent">tan</button>
+        <button class="calc-btn calc-btn--fn" data-action="fn" data-value="asin" aria-label="Arcsine">sin⁻¹</button>
+        <button class="calc-btn calc-btn--fn" data-action="fn" data-value="acos" aria-label="Arccosine">cos⁻¹</button>
+        <button class="calc-btn calc-btn--fn" data-action="fn" data-value="atan" aria-label="Arctangent">tan⁻¹</button>
+        <button class="calc-btn calc-btn--fn" data-action="fn" data-value="log" aria-label="Base-10 logarithm">log</button>
+        <button class="calc-btn calc-btn--fn" data-action="fn" data-value="ln" aria-label="Natural logarithm">ln</button>
+        <button class="calc-btn calc-btn--fn" data-action="fn" data-value="log2" aria-label="Base-2 logarithm">log₂</button>
+        <button class="calc-btn calc-btn--fn" data-action="fn" data-value="abs" aria-label="Absolute value">|x|</button>
+        <button class="calc-btn calc-btn--fn" data-action="fn" data-value="exp" aria-label="Exponential e to the x">eˣ</button>
+        <button class="calc-btn calc-btn--fn" data-action="factorial" aria-label="Factorial">x!</button>
+        <button class="calc-btn calc-btn--fn" data-action="nthroot" aria-label="Nth root">x√y</button>
+        <button class="calc-btn calc-btn--fn" data-action="const" data-value="e" aria-label="Euler's number">e</button>
+        <button class="calc-btn calc-btn--fn" data-action="const" data-value="pi" aria-label="Pi">π</button>
+        <button class="calc-btn calc-btn--fn" data-action="const" data-value="tau" aria-label="Tau">τ</button>
+        <button class="calc-btn calc-btn--fn" data-action="lparen" aria-label="Left parenthesis">(</button>
+        <button class="calc-btn calc-btn--fn" data-action="rparen" aria-label="Right parenthesis">)</button>
+      </div>
+
+      <div id="calc-grid" class="calc-grid">
+        <button class="calc-btn calc-btn--fn" data-action="sqrt" aria-label="Square root">&radic;</button>
+        <button class="calc-btn calc-btn--fn" data-action="square" aria-label="Square">x&sup2;</button>
+        <button class="calc-btn calc-btn--fn" data-action="cube" aria-label="Cube">x&sup3;</button>
+        <button class="calc-btn calc-btn--fn" data-action="pow" aria-label="Power">x<sup>y</sup></button>
+
+        <button class="calc-btn calc-btn--fn" data-action="recip" aria-label="Reciprocal"><sup>1</sup>/<sub>x</sub></button>
+        <button class="calc-btn calc-btn--op" data-action="clear" aria-label="Clear all">C</button>
+        <button class="calc-btn calc-btn--op" data-action="clearEntry" aria-label="Clear entry">CE</button>
+        <button class="calc-btn calc-btn--op" data-action="op" data-value="/" aria-label="Divide">&divide;</button>
+
+        <button class="calc-btn" data-action="digit" data-value="7" aria-label="7">7</button>
+        <button class="calc-btn" data-action="digit" data-value="8" aria-label="8">8</button>
+        <button class="calc-btn" data-action="digit" data-value="9" aria-label="9">9</button>
+        <button class="calc-btn calc-btn--op" data-action="op" data-value="*" aria-label="Multiply">&times;</button>
+
+        <button class="calc-btn" data-action="digit" data-value="4" aria-label="4">4</button>
+        <button class="calc-btn" data-action="digit" data-value="5" aria-label="5">5</button>
+        <button class="calc-btn" data-action="digit" data-value="6" aria-label="6">6</button>
+        <button class="calc-btn calc-btn--op" data-action="op" data-value="-" aria-label="Subtract">&minus;</button>
+
+        <button class="calc-btn" data-action="digit" data-value="1" aria-label="1">1</button>
+        <button class="calc-btn" data-action="digit" data-value="2" aria-label="2">2</button>
+        <button class="calc-btn" data-action="digit" data-value="3" aria-label="3">3</button>
+        <button class="calc-btn calc-btn--op" data-action="op" data-value="+" aria-label="Add">+</button>
+
+        <button class="calc-btn" data-action="sign" aria-label="Toggle sign">&plusmn;</button>
+        <button class="calc-btn" data-action="digit" data-value="0" aria-label="0">0</button>
+        <button class="calc-btn" data-action="decimal" aria-label="Decimal point">.</button>
+        <button class="calc-btn calc-btn--eq" data-action="eq" aria-label="Equals">=</button>
+      </div>
+    </section>
+
+    <!-- ====== Converter Panel ====== -->
+    <section id="tab-convert" class="calc-panel" role="tabpanel" aria-labelledby="tab-convert-btn" hidden>
+      <div class="conv-row">
+        <select id="conv-category" class="conv-select" aria-label="Conversion category"></select>
+        <button id="conv-refresh" class="conv-refresh-btn" hidden aria-label="Refresh exchange rates" title="Refresh exchange rates">↻</button>
+      </div>
+
+      <label class="conv-label" for="conv-from">From</label>
+      <div class="conv-row">
+        <select id="conv-from" class="conv-select" aria-label="From unit"></select>
+        <input type="number" id="conv-input" class="conv-input" inputmode="decimal" aria-label="Value to convert" placeholder="Enter value" />
+      </div>
+
+      <div class="conv-swap">
+        <button id="conv-swap" class="conv-swap-btn" aria-label="Swap units" title="Swap units">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M7 16l-4-4 4-4"/><path d="M17 8l4 4-4 4"/><path d="M3 12h18"/>
+          </svg>
+        </button>
+      </div>
+
+      <label class="conv-label" for="conv-to">To</label>
+      <div class="conv-row">
+        <select id="conv-to" class="conv-select" aria-label="To unit"></select>
+        <input type="number" id="conv-output" class="conv-input" inputmode="decimal" aria-label="Converted value" placeholder="Result" readonly />
+      </div>
+    </section>
+
+    <!-- ====== Health Panel ====== -->
+    <section id="tab-health" class="calc-panel" role="tabpanel" aria-labelledby="tab-health-btn" hidden>
+      <select id="health-type" class="health-type-select" aria-label="Health calculator"></select>
+      <div id="health-fields"></div>
+      <div id="bmi-visual" hidden>
+        <div id="bmi-bar-wrap" class="bmi-bar">
+          <div id="bmi-marker" class="bmi-bar__marker" style="left:50%"></div>
+        </div>
+        <div class="bmi-labels" id="bmi-labels">
+          <span>Underweight</span>
+          <span>Normal</span>
+          <span>Overweight</span>
+          <span>Obese</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Tools Panel ====== -->
+    <section id="tab-tools" class="calc-panel" role="tabpanel" aria-labelledby="tab-tools-btn" hidden>
+      <nav class="tools-subnav" role="tablist" aria-label="Tool type">
+        <button class="tools-tab" role="tab" data-tool="percentage" aria-selected="true">Percentage</button>
+        <button class="tools-tab" role="tab" data-tool="date" aria-selected="false">Date</button>
+        <button class="tools-tab" role="tab" data-tool="tip" aria-selected="false">Tip</button>
+        <button class="tools-tab" role="tab" data-tool="loan" aria-selected="false">Loan</button>
+        <button class="tools-tab" role="tab" data-tool="compound" aria-selected="false">Compound</button>
+        <button class="tools-tab" role="tab" data-tool="savings" aria-selected="false">Savings</button>
+        <button class="tools-tab" role="tab" data-tool="tax" aria-selected="false">Tax</button>
+        <button class="tools-tab" role="tab" data-tool="salary" aria-selected="false">Salary</button>
+        <button class="tools-tab" role="tab" data-tool="quadratic" aria-selected="false">Quadratic</button>
+        <button class="tools-tab" role="tab" data-tool="base" aria-selected="false">Base</button>
+      </nav>
+      <div id="tool-fields"></div>
+    </section>
+
+    <!-- ====== Shared Result Area ====== -->
+    <section id="result-area" class="calc-result" aria-live="polite">
+      <button id="result-copy" class="result-copy" aria-label="Copy result to clipboard" title="Copy result to clipboard">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+        </svg>
+      </button>
+      <div id="result-value" class="result-value"></div>
+      <p id="result-formula" class="result-formula"></p>
+      <p id="result-source" class="result-source"></p>
+      <p id="result-interpretation" class="result-interpretation" hidden></p>
+    </section>
+
+    <!-- ====== History ====== -->
+    <section id="history-area" class="calc-history" aria-label="Calculation history">
+      <h3>History</h3>
+      <ul id="history-list" class="history-list"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contact-line">
+      <a href="https://wa.me/959421069001" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <svg class="contact-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp
+      </a>
+      <span class="sep" aria-hidden="true">&middot;</span>
+      <a href="mailto:contact@pyaek.com" aria-label="Email">
+        <svg class="contact-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        Email
+      </a>
+      <span class="sep" aria-hidden="true">&middot;</span>
+      <a href="https://linkedin.com/in/pyaek" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <svg class="contact-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        LinkedIn
+      </a>
+      <span class="sep" aria-hidden="true">&middot;</span>
+      <a href="https://github.com/pyaek" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <svg class="contact-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        GitHub
+      </a>
+    </div>
+    <p class="license-notice">&copy; 2026 <a>Pyae Phyo Kyaw</a>. <a href="https://github.com/pyae-k/pyaek-com/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">MIT License</a>.</p>
+  </footer>
+
+  <script src="assets/js/app.js" type="module"></script>
+</body>
+</html>
